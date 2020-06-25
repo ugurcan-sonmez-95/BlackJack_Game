@@ -87,12 +87,12 @@ def take_bet(chips):
             else:
                 break
 
-# Create a function for player to draw card
+# Create a function for Player to draw card
 def hit(deck, hand):
     hand.add_card(deck.draw_card())
     hand.exception_for_ace()
 
-# Create a function to give player 'hit' and 'stand' options
+# Create a function to give Player 'hit' and 'stand' options
 def hit_or_stand(deck, hand):
     global game
     while True:
@@ -107,7 +107,7 @@ def hit_or_stand(deck, hand):
             continue
         break
 
-# Create a function to show first two cards of player and dealer
+# Create a function to show first two cards of Player and Dealer
 def show_first_cards(player, dealer):
     print("Dealer's Hand:")
     print("<hidden card>")
@@ -116,7 +116,7 @@ def show_first_cards(player, dealer):
     for card in player.cards:
         print(card)
 
-# Create a function to show all cards of player and dealer
+# Create a function to show all cards of Player and Dealer
 def show_all_cards(player, dealer):
     print("Dealer's Hand:")
     for card in dealer.cards:
@@ -147,7 +147,7 @@ def dealer_win(player, dealer, chips):
 def tie_game(player, dealer):
     print("\nIt is a tie!")
 
-# Create Player's chips (it is set default to 100)
+# Create Player's chips (it is set to 100 as default)
 player_chips = Chips()
 
 # Game phase
