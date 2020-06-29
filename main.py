@@ -25,10 +25,6 @@ class Deck:
         for suit in suits:
             for rank in ranks:
                 self.deck.append(Card(suit, rank))
-    def __str__(self):
-        deck_comp = ''
-        for card in self.deck:
-            deck_comp += '\n' + card.__str__()
     def shuffleDeck(self):
         shuffle(self.deck)
     def draw_card(self):
