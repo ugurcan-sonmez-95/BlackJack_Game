@@ -29,15 +29,10 @@ class Deck:
         deck_comp = ''
         for card in self.deck:
             deck_comp += '\n' + card.__str__()
-        return '\nThe deck has:\n'+deck_comp
     def shuffleDeck(self):
         shuffle(self.deck)
     def draw_card(self):
         return self.deck.pop()
-
-# test_deck = Deck()
-# test_deck.shuffleDeck()
-# print(test_deck)
 
 # Create a Hand class
 class Hand:
@@ -54,15 +49,6 @@ class Hand:
         while ((self.value > 21) and (self.aces)):
             self.value -= 10
             self.aces -= 1
-
-# test_deck = Deck()
-# test_deck.shuffleDeck()
-# test_player = Hand()
-# test_player.add_card(test_deck.draw_card())
-# test_player.add_card(test_deck.draw_card())
-# print(test_player.value)
-# for card in test_player.cards:
-#     print(card)
 
 # Create a Chips class
 class Chips:
