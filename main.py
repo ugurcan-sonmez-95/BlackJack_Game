@@ -38,7 +38,7 @@ class Hand:
         self.aces = 0
     def add_card(self, card):
         self.cards.append(card)
-        self.value += values[card.rank]
+        self.value += values.get(card.rank)
         if (card.rank == 'Ace'):
             self.aces += 1
     def exception_for_ace(self):
