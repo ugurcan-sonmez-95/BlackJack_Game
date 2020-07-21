@@ -2,8 +2,7 @@
 
 ## About
 
-* This is a command line version of BlackJack game.
-* It was written in Python 3.
+* This is a BlackJack game that was written in Python 3.
 
 ### Basic Rules
 
